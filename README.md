@@ -27,7 +27,7 @@ The install script will take care of the swap file for you.
 2. Run the following commands
 
 ```
-wget -N https://raw.githubusercontent.com/BKCrypto1/CC/master/cc-install.sh
+wget -N https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/cc-install.sh
 bash cc-install.sh
 ```
 Upon completion, you will be provided with a bunch of masternode information. Save this information for the next step.
