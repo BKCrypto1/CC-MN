@@ -2,6 +2,7 @@
 Shell script to install a [CampusCoin Masternode](https://www.campuscoinproject.org/) on a Linux server running Ubuntu 16.04. 
 
 *Use it on your own risk.
+
 ***
 ## CC Masternode Tiers
 
@@ -25,6 +26,15 @@ The install script will take care of the swap file for you.
 ## Installation:
 1. Login as root
 2. Run the following commands
+
+#### (Optional) VPS Harden
+*This step is optional, but highly reccomended to secure your VPS. 
+
+[NodeValet.io](https://nodevalet.io/) | [AKcryptoGUY's](https://github.com/akcryptoguy/vps-harden) team developed a fantastic VPS Hardening script. 
+```
+sudo git clone https://github.com/akcryptoguy/vps-harden.git && cd vps-harden && sudo bash get-hard.sh
+```
+If not using VPS Harden, proceed to installing the masternode service
 
 ```
 wget -N https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/cc-install.sh
