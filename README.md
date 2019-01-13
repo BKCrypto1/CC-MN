@@ -32,7 +32,7 @@ The install script will take care of the swap file for you.
 
 [NodeValet.io](https://nodevalet.io/) | [AKcryptoGUY's](https://github.com/akcryptoguy/vps-harden) team developed a fantastic VPS Hardening script. 
 ```
-sudo git clone https://github.com/akcryptoguy/vps-harden.git && cd vps-harden && sudo bash get-hard.sh
+git clone https://github.com/akcryptoguy/vps-harden.git && cd vps-harden && sudo bash get-hard.sh
 ```
 If not using VPS Harden, proceed to installing the masternode service
 
