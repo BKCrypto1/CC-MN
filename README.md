@@ -27,6 +27,7 @@ The install script will take care of the swap file for you.
 1. Login as root
 2. Run the following commands
 
+***
 #### (Optional) VPS Harden
 *This step is optional, but highly reccomended to secure your VPS. 
 
@@ -34,7 +35,7 @@ The install script will take care of the swap file for you.
 ```
 git clone https://github.com/akcryptoguy/vps-harden.git && cd vps-harden && sudo bash get-hard.sh
 ```
-If not using VPS Harden, proceed to installing the masternode service
+***
 
 ```
 wget -N https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/cc-install.sh
