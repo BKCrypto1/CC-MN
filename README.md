@@ -33,13 +33,12 @@ The install script will take care of the swap file for you.
 
 [NodeValet.io](https://nodevalet.io/) | [AKcryptoGUY's](https://github.com/akcryptoguy/vps-harden) team developed a fantastic VPS Hardening script. 
 ```
-git clone https://github.com/akcryptoguy/vps-harden.git && cd vps-harden && sudo bash get-hard.sh
+git clone https://github.com/akcryptoguy/vps-harden.git && cd vps-harden && bash get-hard.sh
 ```
 ***
 
 ```
-wget -N https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/cc-install.sh
-bash cc-install.sh
+wget -N https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/cc-install.sh && bash cc-install.sh
 ```
 Upon completion, you will be provided with a bunch of masternode information. Save this information for the next step.
 ***
