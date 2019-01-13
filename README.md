@@ -16,7 +16,7 @@ The Following Table represents the CC Masternode Tiers. It's a good idea to choo
 
 ***
 ## VPS
-Sign up for either (referral link) [Digital Ocean](https://m.do.co/c/93c45618280e) or [Vultr](https://vultr.com) and set up a bare bones VPS. The $5/month option is sufficient for our needs. If you use the DO link above, you will get $100, 60-day credit.
+Sign up for either (referral link) [Digital Ocean](https://m.do.co/c/93c45618280e) or [Vultr](https://www.vultr.com/?ref=7763785) and set up a bare bones VPS. The $5/month option is sufficient for our needs. If you use the DO link above, you will get $100, 60-day credit.
 - 1GB / 1CPU
 - 25GB SSD
 - 1TB Transfer
