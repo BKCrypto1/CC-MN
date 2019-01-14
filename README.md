@@ -29,7 +29,7 @@ The install script will take care of the swap file for you.
 
 ***
 #### (Optional) VPS Harden
-*This step is optional, but highly reccomended to secure your VPS. 
+*This step is optional, but highly recommended  to secure your VPS. 
 
 [NodeValet.io](https://nodevalet.io/) | [AKcryptoGUY's](https://github.com/akcryptoguy/vps-harden) team developed a fantastic VPS Hardening script. 
 ```
