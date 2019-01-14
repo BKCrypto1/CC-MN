@@ -101,7 +101,7 @@ Also, if you want to check/start/stop CampusCoin , run one of the following comm
 systemctl status CampusCoin #To check the service is running.
 systemctl start CampusCoin #To start CampusCoin service.
 systemctl stop CampusCoin #To stop CampusCoin service.
-systemctl is-enabled CampusCoin #To check whetether CampusCoin service is enabled on boot or not.
+systemctl is-enabled CampusCoin #This will check if the CampusCoin service is enabled on boot or not
 ```
 
 If you need any assistance, feel free to stop by the [CampusCoin Discord](https://discord.gg/m6qUBKy) or [CampusCoin Telegram](https://t.me/CMPCO). 
