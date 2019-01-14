@@ -81,6 +81,11 @@ externalip=IP:port
 masternode start-missing
 ```
 
+or if you need to start a specific MN alias:
+
+```
+startmasternode "alias" 0
+```
 ***
 
 ## VPS Usage:
