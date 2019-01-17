@@ -62,7 +62,15 @@ Complete & Reconnect to VPS
 ```
 wget -N https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/cc-install.sh && bash cc-install.sh
 ```
-Upon completion, you will be provided with a bunch of masternode information. Save this information for the next step.
+
+**CC-Install will guide you through the installation of the CampusCoin Masternode Service.**
+
+Steps:
+1. Installation of Dependencies
+2. (optional) Masternode Private Key - If you have one generated, you can place one here. Otherwise, press enter to be provided with a newly generated key.
+3. CC Server Start
+
+Complete. You will be provided with a bunch of masternode information. Save this information for the next step.
 
 
 ***
