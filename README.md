@@ -35,12 +35,36 @@ The install script will take care of the swap file for you.
 ```
 git clone https://github.com/akcryptoguy/vps-harden.git && cd vps-harden && bash get-hard.sh
 ```
+**VPS-Harden will guide you through a series of installation steps. Complete to its entirety.**
+
+Steps:
+(automated)
+>1. OS Updates
+>2. System Upgrades
+>3. Favored Packages
+>4. Crypto Packages
+
+(User Selection)
+>5. Create Non-Root User (y/n)
+>6. SSH Config (Enter Port)
+>7. Pass Auth (y/n)
+>8. Firewall Config (y/n)
+>9. Hardening (y/n)
+>10. Ksplice Uptrack (y/n)
+>11. Enhance MOTD (y/n)
+>12. Restart SSH (y/n)
+
+Complete & Reconnect to VPS
+
 ***
+
 
 ```
 wget -N https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/cc-install.sh && bash cc-install.sh
 ```
 Upon completion, you will be provided with a bunch of masternode information. Save this information for the next step.
+
+
 ***
 
 ## Desktop wallet setup
