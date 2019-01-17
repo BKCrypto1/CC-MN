@@ -1,4 +1,4 @@
-# CampusCoin
+# CampusCoin Masternode
 Shell script to install a [CampusCoin Masternode](https://www.campuscoinproject.org/) on a Linux server running Ubuntu 16.04. 
 
 *Use it on your own risk.
@@ -58,7 +58,7 @@ Complete & Reconnect to VPS
 
 ***
 
-
+## Install CampusCoin Masternode Service
 ```
 wget -N https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/cc-install.sh && bash cc-install.sh
 ```
