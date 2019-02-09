@@ -22,6 +22,8 @@ sudo rm cc_linux.zip
 systemctl start CampusCoin.service
 echo -e "${GREEN}CC Masternode Updated.${NC}"
 echo -e "------------------------------------------------------------------"
+echo -e "${RED}Useful Commands:${NC}"
 echo -e "Use ${RED}cc-cli masternode status${NC} to check masternode status."
 echo -e "Use ${RED}cc-cli getblockcount${NC} to view current block count."
+echo -e "Use ${RED}cc-cli getinfo${NC} to view coin info."
 echo -e "------------------------------------------------------------------"
