@@ -60,7 +60,7 @@ Complete & Reconnect to VPS
 
 ## Install CampusCoin Masternode Service
 ```
-wget -N https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/cc-install.sh && bash cc-install.sh
+wget https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/cc-install.sh && bash cc-install.sh
 ```
 
 **CC-Install will guide you through the installation of the CampusCoin Masternode Service.**
@@ -74,7 +74,7 @@ Complete. You will be provided with a bunch of masternode information. Save this
 
 ### Update Existing CampusCoin Masternode Service
 ```
-wget -N https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/update_cc_mn.sh && bash update_cc_mn.sh
+wget https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/update_cc_mn.sh && bash update_cc_mn.sh
 ```
 
 ***
