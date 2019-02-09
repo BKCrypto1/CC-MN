@@ -72,6 +72,10 @@ Steps:
 
 Complete. You will be provided with a bunch of masternode information. Save this information for the next step.
 
+### Update Existing CampusCoin Masternode Service
+```
+wget -N https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/update_cc_mn.sh && bash update_cc_mn.sh
+```
 
 ***
 
