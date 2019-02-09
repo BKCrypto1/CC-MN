@@ -4,7 +4,7 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-echo -e "Stopping CampusCoin MN Service"
+echo -e "${RED}Stopping CampusCoin MN Service${NC}"
 systemctl stop CampusCoin.service
 cd /usr/local/bin/
 echo -e "Fetching latest CC linux zip..."
@@ -17,12 +17,11 @@ sudo rm cc-qt
 sudo rm -R ~/.cc/backups/
 sudo rm -R ~/.cc/blocks/
 sudo rm -R ~/.cc/chainstate/
-sudo rm -R ~/.cc/database/
 sudo rm ~/.cc/budget.dat ~/.cc/db.log ~/.cc/debug.log ~/.cc/fee_estimates.dat ~/.cc/mncache.dat ~/.cc/mnpayments.dat ~/.cc/peers.dat
 sudo rm cc_linux.zip
 systemctl start CampusCoin.service
-echo -e "CC Masternode Updated."
+echo -e "${GREEN}CC Masternode Updated.${NC}"
 echo -e "------------------------------------------------------------------"
-echo -e "Use ${GREEN}campuscoin-cli masternode status${NC} to check masternode status."
-echo -e "Use ${GREEN}campuscoin-cli getblockcount${NC} to view current block count."
+echo -e "Use ${RED}cc-cli masternode status${NC} to check masternode status."
+echo -e "Use ${RED}cc-cli getblockcount${NC} to view current block count."
 echo -e "------------------------------------------------------------------"
