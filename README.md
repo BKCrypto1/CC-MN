@@ -68,7 +68,8 @@ wget https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/cc-install.sh && b
 Steps:
 1. Installation of Dependencies
 2. (optional) Masternode Private Key - If you have one generated, you can place one here. Otherwise, press enter to be provided with a newly generated key.
-3. CC Server Start
+3. Download CC Blockchain Snapshot
+4. CC Server Start
 
 Complete. You will be provided with a bunch of masternode information. Save this information for the next step.
 
