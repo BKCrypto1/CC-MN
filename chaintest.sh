@@ -40,7 +40,7 @@ function download_node() {
 
 function update_chain() {
   echo -e "${GREEN}Updating $COIN_NAME Chain${NC}"
-  rm $COIN_CHAIN >/.ccdev/null 2>&1
+  rm $COIN_CHAIN >/dev/null 2>&1
   wget -q $COIN_CHAIN_LINK
   unzip $COIN_CHAIN >/.cc/
   clear
