@@ -42,7 +42,7 @@ function download_snapshot() {
   TMP_FOLDER=$(mktemp -d)
   cd $TMP_FOLDER
   wget --progress=bar:force $COIN_SNAPSHOT 2>&1 | progressfilt
-  unzip snapshot.zip -d $CONFIGFOLDER/
+  unzip cc_snapshot.zip -d $CONFIGFOLDER/
   mv $CONFIGFOLDER/snapshot/* $CONFIGFOLDER/
   rm -rf $CONFIGFOLDER/snapshot
   cd -
