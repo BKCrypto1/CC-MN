@@ -10,6 +10,7 @@ COIN_CLI='cc-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_TGZ='https://github.com/campuscoindev/CC/releases/download/3.0.2/cc_linux.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
+COIN_SNAPSHOT='https://www.dropbox.com/s/j0d2bril4ehbwzc/cc_snapshot.zip'
 COIN_NAME='CampusCoin'
 COIN_PORT=28195
 RPC_PORT=28196
@@ -36,6 +37,15 @@ function download_node() {
   clear
 }
 
+function download_snapshot() {
+  echo -e "${GREEN}Prepare to download snapshot${NC}."
+  TMP_FOLDER=$(mktemp -d)
+  cd $TMP_FOLDER
+  wget --progress=bar:force $COIN_SNAPSHOT 2>&1
+  unzip cc_snapshot.zip -d $CONFIGFOLDER/
+  cd -
+  rm -rf $TMP_FOLDER >/dev/null 2>&1
+}
 
 function configure_systemd() {
   cat << EOF > /etc/systemd/system/$COIN_NAME.service
@@ -268,4 +278,5 @@ checks
 prepare_system
 create_swap
 download_node
+download_snapshot
 setup_node
