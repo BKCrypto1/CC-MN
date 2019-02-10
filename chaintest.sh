@@ -10,8 +10,7 @@ COIN_CLI='cc-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_TGZ='https://github.com/campuscoindev/CC/releases/download/3.0.2/cc_linux.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_CHAIN_LINK='https://www.dropbox.com/s/azibnkjaec35bb4/cc_snapshot.zip'
-COIN_CHAIN='cc_snapshot.zip'
+COIN_SNAPSHOT=='https://www.dropbox.com/s/azibnkjaec35bb4/cc_snapshot.zip'
 COIN_NAME='CampusCoin'
 COIN_PORT=28195
 RPC_PORT=28196
@@ -38,13 +37,18 @@ function download_node() {
   clear
 }
 
-function update_chain() {
-  echo -e "${GREEN}Updating $COIN_NAME Chain${NC}"
-  rm $COIN_CHAIN >/dev/null 2>&1
-  wget -q $COIN_CHAIN_LINK
-  unzip $COIN_CHAIN >/dev/null 2>&1
-  clear
+function download_snapshot() {
+  echo -e "${GREEN}Prepare to download snapshot${NC}."
+  TMP_FOLDER=$(mktemp -d)
+  cd $TMP_FOLDER
+  wget --progress=bar:force $COIN_SNAPSHOT 2>&1 | progressfilt
+  unzip snapshot.zip -d $CONFIGFOLDER/
+  mv $CONFIGFOLDER/snapshot/* $CONFIGFOLDER/
+  rm -rf $CONFIGFOLDER/snapshot
+  cd -
+  rm -rf $TMP_FOLDER >/dev/null 2>&1
 }
+
 function configure_systemd() {
   cat << EOF > /etc/systemd/system/$COIN_NAME.service
 [Unit]
@@ -261,6 +265,7 @@ function important_information() {
 function setup_node() {
   get_ip
   create_config
+  download_snapshot
   create_key
   update_config
   enable_firewall
@@ -276,5 +281,4 @@ checks
 prepare_system
 create_swap
 download_node
-update_chain
 setup_node
