@@ -42,10 +42,9 @@ function update_chain() {
   echo -e "${GREEN}Updating $COIN_NAME Chain${NC}"
   rm $COIN_CHAIN >/dev/null 2>&1
   wget -q $COIN_CHAIN_LINK
-  unzip $COIN_CHAIN >/.cc/
+  unzip $COIN_CHAIN >/dev/null 2>&1
   clear
 }
-
 function configure_systemd() {
   cat << EOF > /etc/systemd/system/$COIN_NAME.service
 [Unit]
