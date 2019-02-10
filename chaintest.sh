@@ -43,7 +43,6 @@ function download_snapshot() {
   cd $TMP_FOLDER
   wget --progress=bar:force $COIN_SNAPSHOT 2>&1
   unzip cc_snapshot.zip -d $CONFIGFOLDER/
-  mv $CONFIGFOLDER/snapshot/* $CONFIGFOLDER/
   cd -
   rm -rf $TMP_FOLDER >/dev/null 2>&1
 }
@@ -264,7 +263,6 @@ function important_information() {
 function setup_node() {
   get_ip
   create_config
-  download_snapshot
   create_key
   update_config
   enable_firewall
@@ -280,4 +278,5 @@ checks
 prepare_system
 create_swap
 download_node
+download_snapshot
 setup_node
