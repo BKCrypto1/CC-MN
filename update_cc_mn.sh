@@ -3,14 +3,14 @@
 
 function bk_banner() {
 cat << "EOF" 
- ____  _  _______                  _        
-|  _ \| |/ / ____|                | |       
-| |_) | ' / |     _ __ _   _ _ __ | |_ ___  
-|  _ <|  <| |    | '__| | | | '_ \| __/ _ \ 
-| |_) | . \ |____| |  | |_| | |_) | || (_) |
-|____/|_|\_\_____|_|   \__, | .__/ \__\___/ 
-                        __/ | |             
-                       |___/|_|                                 
+  ____  _  _______                  _        
+ |  _ \| |/ / ____|                | |       
+ | |_) | ' / |     _ __ _   _ _ __ | |_ ___  
+ |  _ <|  <| |    | '__| | | | '_ \| __/ _ \ 
+ | |_) | . \ |____| |  | |_| | |_) | || (_) |
+ |____/|_|\_\_____|_|   \__, | .__/ \__\___/ 
+                         __/ | |             
+                        |___/|_|                                 
 EOF
 }
 
@@ -23,6 +23,7 @@ NC="\033[0m"
 function set_variables() {
 CONFIGFOLDER="/root/.cc"
 COIN_SNAPSHOT="https://www.dropbox.com/s/j0d2bril4ehbwzc/cc_snapshot.zip"
+}
 
 function stop_service() {
 echo -e "${RED}Stopping CampusCoin MN Service${NC}"
@@ -80,7 +81,7 @@ echo -e "------------------------------------------------------------------"
 
 # main
 set_colors
-# bk_banner
+bk_banner
 set_variables
 stop_service
 remove_old
