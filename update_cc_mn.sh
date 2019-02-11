@@ -1,15 +1,28 @@
 #!/bin/bash
 # This script will update your existing CampusCoin (CC) Masternode.
 
+function bk_banner() {
+cat << "EOF" 
+ ____  _  _______                  _        
+|  _ \| |/ / ____|                | |       
+| |_) | ' / |     _ __ _   _ _ __ | |_ ___  
+|  _ <|  <| |    | '__| | | | '_ \| __/ _ \ 
+| |_) | . \ |____| |  | |_| | |_) | || (_) |
+|____/|_|\_\_____|_|   \__, | .__/ \__\___/ 
+                        __/ | |             
+                       |___/|_|                                 
+EOF
+}
+
 function set_colors() {
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-NC='\033[0m'
+RED="\033[0;31m"
+GREEN="\033[0;32m"
+NC="\033[0m"
 }
 
 function set_variables() {
-CONFIGFOLDER='/root/.cc'
-COIN_SNAPSHOT='https://www.dropbox.com/s/j0d2bril4ehbwzc/cc_snapshot.zip'
+CONFIGFOLDER="/root/.cc"
+COIN_SNAPSHOT="https://www.dropbox.com/s/j0d2bril4ehbwzc/cc_snapshot.zip"
 
 function stop_service() {
 echo -e "${RED}Stopping CampusCoin MN Service${NC}"
