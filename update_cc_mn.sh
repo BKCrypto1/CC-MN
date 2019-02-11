@@ -1,18 +1,5 @@
+#!/bin/bash
 # This script will update your existing CampusCoin (CC) Masternode.
-
-function bk_banner() {
-cat << "EOF" 
- ____  _  _______                  _        
-|  _ \| |/ / ____|                | |       
-| |_) | ' / |     _ __ _   _ _ __ | |_ ___  
-|  _ <|  <| |    | '__| | | | '_ \| __/ _ \ 
-| |_) | . \ |____| |  | |_| | |_) | || (_) |
-|____/|_|\_\_____|_|   \__, | .__/ \__\___/ 
-                        __/ | |             
-                       |___/|_|                       
-EOF
-}
-
 
 function set_colors() {
 RED='\033[0;31m'
@@ -80,7 +67,7 @@ echo -e "------------------------------------------------------------------"
 
 # main
 set_colors
-bk_banner
+# bk_banner
 set_variables
 stop_service
 remove_old
