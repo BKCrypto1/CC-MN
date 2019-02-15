@@ -33,7 +33,7 @@ cd /usr/local/bin/
 
 function get_latest() {
 echo -e "${GREEN}Fetching latest CC linux zip...${NC}"
-wget -c https://github.com/campuscoindev/CC/releases/download/3.0.2/cc_linux.zip
+wget -c https://github.com/campuscoindev/CC/releases/download/3.0.2.1/cc_linux.zip
 }
 
 function remove_old() {

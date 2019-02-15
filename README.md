@@ -58,7 +58,7 @@ Complete & Reconnect to VPS
 
 ***
 
-## Install CampusCoin Masternode Service (v3.0.2)
+## Install CampusCoin Masternode Service (v3.0.2.1)
 ```
 wget https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/cc-install.sh && bash cc-install.sh
 ```
@@ -73,7 +73,7 @@ Steps:
 
 Complete. You will be provided with a bunch of masternode information. Save this information for the next step.
 
-### Update Existing CampusCoin Masternode Service (Prior to v3.0.2)
+### Update Existing CampusCoin Masternode Service (Prior to v3.0.2.1)
 ```
 wget https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/update_cc_mn.sh && bash update_cc_mn.sh
 ```
