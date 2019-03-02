@@ -78,6 +78,11 @@ Complete. You will be provided with a bunch of masternode information. Save this
 wget https://raw.githubusercontent.com/BKCrypto1/CC-MN/master/update_cc_mn.sh && bash update_cc_mn.sh
 ```
 
+Note: If you have used this script in the past, you may need to remove the old update file before downloading 
+```
+rm -rf update_cc_mn.sh
+```
+
 ***
 
 ## Desktop wallet setup
@@ -141,5 +146,7 @@ systemctl stop CampusCoin #To stop CampusCoin service.
 systemctl is-enabled CampusCoin #This will check if the CampusCoin service is enabled on boot or not
 ```
 
-If you need any assistance, feel free to stop by the [CampusCoin Discord](https://discord.gg/m6qUBKy) or [CampusCoin Telegram](https://t.me/CMPCO). 
-I go by the name of BK in both Channels.
+If you need any assistance, feel free to stop by the [CampusCoin Discord](https://discord.gg/m6qUBKy) or [CampusCoin Telegram](https://t.me/CMPCO). I go by the name of BK in both Channels.
+
+CC Donations: ```CNUfWFCDHH3711MbbF7Q7zTf7ctU6LkETi```
+
